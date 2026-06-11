@@ -8,6 +8,7 @@
     margin: 24px 120px;
     display: flex;
     width: auto;
+    text-transform: uppercase;
 }
 
 .mainFooter {

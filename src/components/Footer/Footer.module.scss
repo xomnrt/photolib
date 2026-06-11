@@ -14,4 +14,8 @@
     font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
     color: black;
     overflow: hidden;
+
+    :hover {
+        color: crimson;
+    }
 }
