@@ -1,0 +1,15 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+    color: black;
+    overflow: hidden;
+}

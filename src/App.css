@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    margin: 24px 120px;
+
+}
+
+.mainHeader {
+    margin: 24px 120px;
+    display: flex;
+    width: auto;
+}
+
+.mainFooter {
+    margin: 24px 120px;
+    margin-top: auto;
+
+    width: auto;
+    display: flex;
+}
+
+.mainGallery {
+    margin: 24px 120px;
+
+    width: auto;
+    display: flex;
+    flex: 1;
+}
