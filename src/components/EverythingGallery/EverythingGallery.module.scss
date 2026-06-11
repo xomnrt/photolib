@@ -1,0 +1,102 @@
+.everythingGalleryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 100%;
+
+    font-family: 'Open Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+
+.backButton {
+    display: block;
+    margin: 0;
+
+    width: 60px;
+    height: 45px;
+
+    font-size: 1.5rem;
+
+    &:hover {
+        color: #80050A;
+    }
+}
+
+.description {
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.photosContainer {
+    columns: 3 280px;
+    column-gap: 32px;
+    padding-top: 12px;
+}
+
+.photoFrame {
+    display: inline-block;
+
+    --photo-frame-width: min(100%, 380px);
+
+    width: var(--photo-frame-width);
+    aspect-ratio: 108 / 85;
+    margin-bottom: 32px;
+
+    background-color: ivory;
+    background-image: url(../../assets/paper_texture.jpg);
+    background-position: center;
+
+    box-shadow: 3px 4px 8px rgba(18, 18, 18, 0.22);
+
+    break-inside: avoid;
+    position: relative;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.photoFrame:nth-child(5n + 1) {
+    transform: rotate(-2deg);
+}
+
+.photoFrame:nth-child(5n + 2) {
+    transform: rotate(1.5deg);
+}
+
+.photoFrame:nth-child(5n + 3) {
+    transform: rotate(-0.75deg);
+}
+
+.photoFrame:nth-child(5n + 4) {
+    transform: rotate(2deg);
+}
+
+.photoFrame:nth-child(5n) {
+    transform: rotate(-1.25deg);
+}
+
+.photoFrame:hover {
+    transform: rotate(0deg) translateY(-4px);
+    box-shadow: 6px 8px 14px rgba(18, 18, 18, 0.24);
+    z-index: 1;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(99 / 108 * 100%);
+    height: calc(62 / 85 * 100%);
+
+    background-color: #121212;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ivory;
+    font-size: 2rem;
+    font-weight: 700;
+
+    position: absolute;
+    top: calc(4.5 / 85 * 100%);
+    left: calc(4.5 / 108 * 100%);
+}

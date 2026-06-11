@@ -4,18 +4,37 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+        content: "";
+    }
+
+    &:has(.linkButton)::before {
+        display: none;
+    }
 }
 
-.link {
+.link,
+.linkButton {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.2;
-    font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
-    color: black;
+    font-family: 'Open Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+    color: #121212;
     overflow: hidden;
 
-    :hover {
-        color: crimson;
+    &:hover {
+        color: #80050A;
     }
+}
+
+.linkButton {
+    border: 0;
+    padding: 0;
+    margin-left: 0;
+    background: transparent;
+    cursor: pointer;
+    text-transform: lowercase;
 }

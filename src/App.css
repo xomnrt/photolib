@@ -8,7 +8,7 @@
     margin: 24px 120px;
     display: flex;
     width: auto;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .mainFooter {
@@ -20,9 +20,16 @@
 }
 
 .mainGallery {
-    margin: 24px 120px;
+    margin: 38px 120px;
 
     width: auto;
     display: flex;
+
     flex: 1;
+}
+
+.mainGalleryEverything {
+    display: block;
+    flex: 0 0 auto;
+    margin-inline: 40px;
 }

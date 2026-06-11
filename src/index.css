@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "@heroui/styles";
 
 :root {
-  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Open Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Open Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+  --bg: #F3F1EC;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -26,7 +27,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #16171d;
+    --bg: #F3F1EC;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
