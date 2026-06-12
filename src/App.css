@@ -5,31 +5,45 @@
 }
 
 .mainHeader {
-    margin: 24px 120px;
+    margin: clamp(12px, 2.4svh, 24px) 120px;
     display: flex;
     width: auto;
     text-transform: lowercase;
+    flex: 0 0 auto;
 }
 
 .mainFooter {
-    margin: 24px 120px;
-    margin-top: auto;
+    margin: clamp(12px, 2.4svh, 24px) 120px;
 
     width: auto;
     display: flex;
+    flex: 0 0 auto;
 }
 
 .mainGallery {
-    margin: 38px 120px;
+    margin: clamp(8px, 2.8svh, 38px) 120px;
 
     width: auto;
     display: flex;
 
-    flex: 1;
+    flex: 1 1 0;
+    min-height: 0;
 }
 
 .mainGalleryEverything {
     display: block;
     flex: 0 0 auto;
     margin-inline: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
 }

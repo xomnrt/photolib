@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
-@import "tailwindcss";
-@import "@heroui/styles";
 
 :root {
   --sans: 'Open Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -38,9 +36,6 @@
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
 }
 
 #root {
@@ -48,7 +43,7 @@
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  min-height: 100svh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
